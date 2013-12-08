@@ -24,5 +24,9 @@
             <tag name="doctrine.event_listener" event="prePersist" />
             <tag name="doctrine.event_listener" event="preUpdate" />
         </service>
+        <service id="jasoft_viringo_core.system_config_manager" class="Jasoft\Viringo\CoreBundle\Service\SystemConfigManager"
+                factory-service="doctrine" factory-method="getRepository">
+            <argument>JasoftViringoCoreBundle:SystemConfig</argument>
+        </service>
     </services>
 </container>

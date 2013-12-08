@@ -7,7 +7,6 @@ namespace Jasoft\Viringo\CoreBundle\Service;
  */
 class SystemConfigManager {
     
-    
     const MASTER_CONNECTION_URL="master.connection.url";
     
     
@@ -16,6 +15,11 @@ class SystemConfigManager {
      * @var \Jasoft\Viringo\CoreBundle\Repository\SystemConfigRepository
      */
     private $systemConfigRepository;
+    
+    function __construct(\Jasoft\Viringo\CoreBundle\Repository\SystemConfigRepository $systemConfigRepository) {
+        $this->systemConfigRepository = $systemConfigRepository;
+    }
+
     
     /**
      * 
