@@ -1,0 +1,14 @@
+parameters:
+    database_driver: pdo_pgsql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: test
+    database_user: postgres
+    database_password: root
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 2b4ddee71970df2b22c718e2bcd44259
+    database_path: null

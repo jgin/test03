@@ -1,0 +1,376 @@
+.home{
+    background-image:url(../menu-icons/home.png) !important;
+}
+
+.workRequest{
+    background-image:url(../menu-icons/work_request.png) !important;
+}
+
+.rimeMatrix{
+    background-image:url(../menu-icons/matrix.png) !important;
+}
+
+.scheduling{
+    background-image:url(../menu-icons/scheduling.png) !important;
+}
+
+.duplicate{
+    background-image:url(../menu-icons/duplicate.png) !important;
+}
+
+.annulment{
+    background-image:url(../menu-icons/annulment.png) !important;
+}
+
+.schedule{
+    background-image:url(../menu-icons/schedule.png) !important;
+}
+
+.maintainance{
+    background-image:url(../menu-icons/maintainance.png) !important;
+}
+
+.user{
+    background-image:url(../menu-icons/user.png) !important;
+}
+
+.security{
+    background-image:url(../menu-icons/security.png) !important;
+}
+
+.production{
+    background-image:url(../menu-icons/production2.png) !important;
+}
+
+.report{
+    background-image:url(../menu-icons/report.png) !important;
+}
+
+.well{
+    background-image:url(../menu-icons/well.png) !important;
+}
+
+.test{
+    background-image:url(../menu-icons/test.png) !important;
+}
+
+.calendar{
+    background-image:url(../menu-icons/calendar.png) !important;
+}
+
+.forecast{
+    background-image:url(../menu-icons/forecast.png) !important;
+}
+.workCategory{
+    background-image:url(../menu-icons/categoria_de_trabajo.png) !important;
+}
+.rimeCriteria{
+    background-image:url(../menu-icons/criterio_RIME.png) !important;
+}
+.rimeCriteriaValue{
+    background-image:url(../menu-icons/valores_de_criterio_RIME.png) !important;
+}
+.rimeMatrix{
+    background-image:url(../menu-icons/matriz_RIME.png) !important;
+}
+.riskLevel{
+    background-image:url(../menu-icons/niveles_de_riesgo.png) !important;
+}
+.ocurrenceProbability{
+    background-image:url(../menu-icons/probabilidad_de_ocurrencia.png) !important;
+}
+.criteriaGroup{
+    background-image:url(../menu-icons/grupo_de_criterios.png) !important;
+}
+.workRequestSource{
+    background-image:url(../menu-icons/origen_de_pedido.png) !important;
+}
+.workRequestStatus{
+    background-image:url(../menu-icons/estados_de_pedido.png) !important;
+}
+.sector{
+    background-image:url(../menu-icons/sector.png) !important;
+}
+.workShop{
+    background-image:url(../menu-icons/taller.png) !important;
+}
+.quadrille{
+    background-image:url(../menu-icons/cuadrilla.png) !important;
+}
+.taskGeneralScheduler{
+    background-image:url(../menu-icons/planificadores_P&P.png) !important;
+}
+.workTemplate{
+    background-image:url(../menu-icons/plantillas_de_origen_de_trabajo.png) !important;
+}
+.workOrderStatus{
+    background-image:url(../menu-icons/estados_de_pedido.png) !important;
+}
+.wellService{
+    background-image:url(../menu-icons/servicio_de_pozos.png) !important;
+}
+.naturalGas{
+    background-image:url(../menu-icons/modulo_de_gas_natural.png) !important;
+}
+.productionModuleTables{
+    background-image:url(../menu-icons/tabla_de_modulo_de_produccion.png) !important;
+}
+
+.wellTestType{
+    background-image:url(../menu-icons/tipo_de_pruebas_de_pozos.png) !important;
+}
+.wellState{
+    background-image:url(../menu-icons/estado_de_pozo.png) !important;
+}
+.wellTypeByState{
+    background-image:url(../menu-icons/tipo_de_pozo_por_estado.png) !important;
+}
+.wellGroup{
+    background-image:url(../menu-icons/grupo_de_pozo.png) !important;
+}
+.wellTypeByProduction{
+    background-image:url(../menu-icons/tipo_de_pozo_por_produccion.png) !important;
+}
+.wellFeature{
+    background-image:url(../menu-icons/caracteristicas_de_pozo.png) !important;
+}
+.equipmentManagement{
+    background-image:url(../menu-icons/tabla_gestion_de_equipos.png) !important;
+}
+.feature{
+    background-image:url(../menu-icons/caracteristicas.png) !important;
+}
+.equipmentType{
+    background-image:url(../menu-icons/tipo_de_equipo.png) !important;
+}
+.mark{
+    background-image:url(../menu-icons/marcas_de_equipo.png) !important;
+}
+.equipmentCondition{
+    background-image:url(../menu-icons/condicion_de_equipo.png) !important;
+}
+.equipment{
+    background-image:url(../menu-icons/gestion_de_equipos.png) !important;
+}
+.materialsManagement{
+    background-image:url(../menu-icons/tabla_gention_de_materiales.png) !important;
+}
+.productType{
+    background-image:url(../menu-icons/tipo_de_materiales.png) !important;
+}
+.product{
+    background-image:url(../menu-icons/gestion_de_materiales.png) !important;
+}
+.toolsManagement{
+    background-image:url(../menu-icons/tabla_gestion_de_herramientas.png) !important;
+}
+.toolType{
+    background-image:url(../menu-icons/tipo_de_herramientas.png) !important;
+}
+.tool{
+    background-image:url(../menu-icons/gestion_de_herramientas.png) !important;
+}
+
+
+
+.tankManagement{
+    background-image:url(../menu-icons/tabla_gestion_de_tanque.png) !important;
+}
+.gasTargetType{
+    background-image:url(../menu-icons/tipo_destino_de_gas.png) !important;
+}
+.tankType{
+    background-image:url(../menu-icons/tipo_de_tanque.png) !important;
+}
+.alternativeTankType{
+    background-image:url(../menu-icons/tipo_alternativo_de_tanque.png) !important;
+}
+.tank{
+    background-image:url(../menu-icons/gestion_de_tanque.png) !important;
+}
+.locationType{
+    background-image:url(../menu-icons/tipo_de_ubicacion.png) !important;
+}
+.location{
+    background-image:url(../menu-icons/gestion_de_ubicacion.png) !important;
+}
+.batteryType{
+    background-image:url(../menu-icons/tipo_de_bateria.png) !important;
+}
+.battery{
+    background-image:url(../menu-icons/gestion_de_bateria.png) !important;
+}
+.lotsManagement{
+    background-image:url(../menu-icons/tabla_gestion_de_lotes.png) !important;
+}
+.lot{
+    background-image:url(../menu-icons/lotes.png) !important;
+}
+.zone{
+    background-image:url(../menu-icons/zonas.png) !important;
+}
+.field{
+    background-image:url(../menu-icons/yacimiento.png) !important;
+}
+.geoFormation{
+    background-image:url(../menu-icons/formacion.png) !important;
+}
+.employeeManagement{
+    background-image:url(../menu-icons/gestion_de_empleado.png) !important;
+}
+.employee{
+    background-image:url(../menu-icons/empleados.png) !important;
+}
+
+.companyManagement{
+    background-image:url(../menu-icons/gestion_de_empresas.png) !important;
+}
+.company{
+    background-image:url(../menu-icons/empresas.png) !important;
+}
+.dependency{
+    background-image:url(../menu-icons/areas.png) !important;
+}
+.dependencyLevel{
+    background-image:url(../menu-icons/tipo_de_areas.png) !important;
+}
+.position{
+    background-image:url(../menu-icons/cargos.png) !important;
+}
+
+.measureUnitType{
+    background-image:url(../menu-icons/tipo_unidad_de_medida.png) !important;
+}
+.measureUnit{
+    background-image:url(../menu-icons/unidad_de_medida.png) !important;
+}
+.exchangeRate{
+    background-image:url(../menu-icons/tipo_de_cambio.png) !important;
+}
+.money{
+    background-image:url(../menu-icons/moneda.png) !important;
+}
+.turn{
+    background-image:url(../menu-icons/turnos.png) !important;
+}
+.activityType{
+    background-image:url(../menu-icons/tipo_de_actividad.png) !important;
+}
+.documentType{
+    background-image:url(../menu-icons/tipo_de_documento.png) !important;
+}
+.bloodGroup{
+    background-image:url(../menu-icons/grupo_sanguineo.png) !important;
+}
+.customer{
+    background-image:url(../menu-icons/gestion_de_clientes.png) !important;
+}
+.closingDate {
+    background-image:url(../menu-icons/fecha_cierre.png) !important;
+}
+.configParam {
+    background-image:url(../menu-icons/config_param.png) !important;
+}
+.configParamPP {
+    background-image:url(../menu-icons/p_p_config_param.png) !important;
+}
+.configParamProductionSystem {
+    background-image:url(../menu-icons/p_p_config_param.png) !important;
+}
+.configParamGeneralSystem {
+    background-image:url(../menu-icons/p_p_config_param.png) !important;
+}
+.reportModule {
+    background-image:url(../menu-icons/report_module.png) !important;
+}
+
+.backlog {
+    background-image:url(../menu-icons/backlog.png) !important;
+}
+.urgency {
+    background-image:url(../menu-icons/urgency.png) !important;
+}   
+.workOrderEfficiency {
+    background-image:url(../menu-icons/workOrderEfficiency.png) !important;
+}
+.workOrderClose {
+    background-image:url(../menu-icons/workOrderClose.png) !important;
+}
+.documentClose {
+    background-image:url(../menu-icons/close.png) !important;
+}
+.reportMaster {
+    background-image:url(../menu-icons/reportMaster.png) !important;
+}
+
+.chemicalTreatment {
+    background-image:url(../menu-icons/test_tube.png) !important;
+}
+
+.chemicalProduct {
+    background-image:url(../menu-icons/chemical_product.png) !important;
+}
+
+.directWorkOrder {
+    background-image:url(../menu-icons/direct_order.png) !important;
+}
+
+.sales {
+    background-image:url(../menu-icons/ventas.png) !important;
+}
+
+.measure {
+    background-image:url(../menu-icons/measure.png) !important;
+}
+
+.indicator {
+    background-image:url(../menu-icons/indicator.png) !important;
+}
+
+.workOrder {
+    background-image:url(../menu-icons/workOrder.png) !important;
+}
+
+.equipmentAndTools {
+    background-image:url(../menu-icons/equipmens_and_tools.png) !important;
+}
+
+.activities {
+    background-image:url(../menu-icons/activities.png) !important;
+}
+
+.evidence {
+    background-image:url(../menu-icons/evidence.png) !important;
+}
+
+.notPerformed {
+    background-image:url(../menu-icons/not_performed.png) !important;
+}
+
+.activityList {
+    background-image:url(../menu-icons/activity_list.png) !important;
+}
+
+.machineHours {
+    background-image:url(../menu-icons/machine_hours.png) !important;
+}
+
+.manHours {
+    background-image:url(../menu-icons/man_hours.png) !important;
+}
+
+.workDuration {
+    background-image:url(../menu-icons/work_duration.png) !important;
+}
+
+.materials {
+    background-image:url(../menu-icons/materials.png) !important;
+}
+
+.ratio {
+    background-image:url(../menu-icons/ratio.png) !important;
+}
+
+.management {
+    background-image:url(../menu-icons/management.png) !important;
+}

@@ -1,0 +1,10 @@
+jasoft_viringo_core:
+    resource: "@JasoftViringoCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /viringo/core/
+
+jasoft_viringo_security:
+    resource: "@JasoftViringoSecurityBundle/Controller/"
+    type:     annotation
+    prefix:   /viringo/security/
+

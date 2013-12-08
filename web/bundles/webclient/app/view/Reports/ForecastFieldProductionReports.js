@@ -1,0 +1,130 @@
+
+/* 
+ * Filters:Fecha desde - hasta
+ */
+Ext.define('sisprod.view.Reports.ForecastFieldProductionReports', {
+    extend: 'sisprod.view.base.TabPanelItem',
+    closable: true,
+    height: 300,
+//    width: 300,
+    
+    messages: {
+        reportTitle: 'Forecast Field Production',
+        labels: {
+            lot: 'Lot',
+            lotEmptyText: 'All Lots',
+            month: 'Month',
+            print:'Print',
+            resetForm:'Clear'
+        },
+        alertMessage: 'Alert'
+    },
+    
+    layout:{
+        type: 'vbox',
+        align: 'center'
+    },
+    padding: '20 0 0 0',
+    initComponent: function(){
+       var me = this;
+       me.items = new Array();
+       
+       var form = Ext.create('Ext.form.Panel', {
+           title: me.messages.reportTitle,
+           frame: true,
+           defaults: {
+                labelWidth: 120
+           },
+           items:[
+                {
+                    xtype: 'combobox',
+                    name: 'idLot'+me.id,
+                    id: 'idLot'+me.id,
+                    store: Ext.create('sisprod.store.LotAll').load(),
+                    fieldLabel: me.messages.labels.lot,
+                    displayField: 'lotName',
+                    valueField: 'idLot',
+                    emptyText:me.messages.labels.lotEmptyText,
+                    forceSelection: true,
+                    labelWidth:100
+                },
+                {
+                    xtype: 'fieldcontainer',
+                    layout: 'hbox',
+                    fieldLabel: me.messages.labels.workRequestDate,
+                    defaults: {labelWidth: 100}, 
+                    items: [
+                        {
+                            xtype: 'monthYearField',
+                            id: 'month'+me.id,
+                            name: 'month'+me.id,
+                            format: 'F, Y',
+                            fieldLabel: me.messages.labels.month,
+                            allowBlank:false
+                       }
+                    ]
+                }
+            ],
+            buttons:[
+                {
+                    id:'btnPrintForecastFieldProductionReports'+me.id,
+                    iconCls: 'print',
+                    text: me.messages.labels.print,
+                    handler: function(){
+                        if(form.getForm().isValid()){
+                            var values = form.getValues();
+                            //
+                            var idLot = -1;
+                            if(Ext.getCmp('idLot'+me.id).getValue()!=null)
+                                idLot=Ext.getCmp('idLot'+me.id).getValue();
+                            var month=Ext.getCmp('month'+me.id).month;
+                            var year=Ext.getCmp('month'+me.id).year;                            
+                            Ext.BaseAjax.request({
+                                url:'rest/productionForecast/existProductionForecast.htm',
+                                method: 'POST',
+                                params:{
+                                    idLot: idLot,
+                                    month: month,
+                                    year: year
+                                },
+                                success: function(response, options){
+                                    var request = Ext.JSON.decode(response.responseText);
+                                    if(request.success){
+                                        var reportLink = Ext.String.format("reports.htm?reportName=forecast_field_production.rptdesign&rpInMes={0}"+
+                                            "&rpInAnio={1}&rpInLote={2}&rpInIdProductionForecast={3}",month,year,idLot,request.data.idProductionForecast);
+                                        var printWindow = Ext.create('sisprod.view.base.BasePrintWindow', {
+                                            controller: me.controller,
+                                            forPrintingList: false,
+                                            standardXls: true, 
+                                            formData: {
+                                                url: reportLink,
+            //                                    defaultFormat: sisprod.BasePrintWindow.PDF,
+                                                defaultFormat: sisprod.BasePrintWindow.STANDARD_XLS, 
+            //                                    selectableFormat: false,
+                                                hiddenTitle: true
+                                            }
+                                        });
+                                        printWindow.show();
+                                    }else{
+                                        Ext.Msg.alert(me.messages.alertMessage,request.message)
+                                    }
+                                }
+                            });
+                            
+                        }
+                    }
+                },
+                {
+                    name:'btnClearForecastFieldProductionReports'+me.id,
+                    text: me.messages.labels.resetForm,
+                    iconCls: 'clear',
+                    handler: function(){
+                        form.getForm().reset();
+                    }
+                }
+            ]
+        });
+       me.items.push(form);
+       me.callParent(arguments);
+    }
+});

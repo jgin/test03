@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <!--
+    <parameters>
+        <parameter key="jasoft_viringo_security.example.class">Jasoft\Viringo\SecurityBundle\Example</parameter>
+    </parameters>
+
+    <services>
+        <service id="jasoft_viringo_security.example" class="%jasoft_viringo_security.example.class%">
+            <argument type="service" id="service_id" />
+            <argument>plain_value</argument>
+            <argument>%parameter_name%</argument>
+        </service>
+    </services>
+    -->
+    
+    <parameters>
+        <parameter key="jasoft_viringo_security.manager_name">default</parameter>
+    </parameters>
+    
+    <services>
+        <!-- Managers -->
+<!--        <service id="jasoft_viringo_security.manager.system_user" class="%jasoft_viringo_security.example.class%"  >
+            <property name="doctrine" type="service" id="doctrine" /> 
+            <property name="managerName" type="string" >%jasoft_viringo_security.manager_name%</property>
+        </service>-->
+        
+        
+        <!-- User proviers -->
+        <service id="jasoft_viringo_security.system_user_provider" class="Jasoft\Viringo\SecurityBundle\Service\UserProvider\SystemUserProvider">
+            <property name="doctrine" type="service" id="doctrine" /> 
+            <property name="managerName" type="string" >%jasoft_viringo_security.manager_name%</property>
+        </service>
+        <service id="jasoft_viringo_security.local_user_provider" class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider">
+            <argument type="service" id="doctrine" />
+            <argument type="string" >JasoftViringoSecurityBundle:SystemLocalUser</argument>
+            <argument type="string" >username</argument>
+        </service>
+        
+        
+    </services>
+</container>
